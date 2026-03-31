@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "badge": "",
+    "badge": "Most Popular",
     "title": "Social Media Starter",
     "description": "500+ curated templates specifically designed for Instagram and TikTok growth.",
     "price": "$29",
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "badge": "Best Value",
+    "badge": "Best Seller",
     "title": "Ultimate Marketing Suite",
     "description": "5000+ professional assets including email headers, ads, and landing pages.",
     "price": "$99",
@@ -53,7 +53,7 @@
   },
   {
     "id": 5,
-    "badge": "New",
+    "badge": "",
     "title": "Branding Essentials",
     "description": "Logo templates, brand guidelines, and stationary mockups for startups.",
     "price": "$59",
@@ -66,7 +66,7 @@
   },
   {
     "id": 6,
-    "badge": "",
+    "badge": "New",
     "title": "Video Creator Bundle",
     "description": "Motion graphics templates and video overlays for high-end production.",
     "price": "$79",
