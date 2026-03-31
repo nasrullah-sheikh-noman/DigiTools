@@ -5,11 +5,12 @@
     "title": "Design Templates Pack",
     "description": "2000+ premium templates for social media, presentations, and marketing materials.",
     "price": "$49",
-    "billingCycle": "One-Time",
+    "billingCycle": "Year",
     "feature1": "2000+ templates",
     "feature2": "Monthly updates",
     "feature3": "Commercial license",
-    "buttonText": "Buy Now"
+    "buttonText": "Buy Now",
+    "image": "https://i.ibb.co.com/xK1Q07Nj/design-tool.png"
   },
   {
     "id": 2,
@@ -17,11 +18,12 @@
     "title": "Social Media Starter",
     "description": "500+ curated templates specifically designed for Instagram and TikTok growth.",
     "price": "$29",
-    "billingCycle": "One-Time",
+    "billingCycle": "Month",
     "feature1": "500+ templates",
     "feature2": "Weekly updates",
     "feature3": "Personal license",
-    "buttonText": "Buy Now"
+    "buttonText": "Buy Now",
+    "image": "https://i.ibb.co.com/0ptXRj9q/social-media.png"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "feature1": "5000+ templates",
     "feature2": "Daily updates",
     "feature3": "Extended license",
-    "buttonText": "Buy Now"
+    "buttonText": "Buy Now",
+    "image": "https://i.ibb.co.com/CKBwGnvd/operation.png"
   },
   {
     "id": 4,
@@ -41,11 +44,12 @@
     "title": "Presentation Master",
     "description": "Premium slide decks for Keynote, PowerPoint, and Google Slides.",
     "price": "$39",
-    "billingCycle": "One-Time",
+    "billingCycle": "Month",
     "feature1": "300+ slide decks",
     "feature2": "Quarterly updates",
     "feature3": "Commercial license",
-    "buttonText": "Buy Now"
+    "buttonText": "Buy Now",
+    "image": "https://i.ibb.co.com/Kx3yYhw9/writing-2327400-1.png"
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "feature1": "1000+ assets",
     "feature2": "Monthly updates",
     "feature3": "Commercial license",
-    "buttonText": "Buy Now"
+    "buttonText": "Buy Now",
+    "image": "https://i.ibb.co.com/9mqBXms9/portfolio.png"
   },
   {
     "id": 6,
@@ -65,10 +70,11 @@
     "title": "Video Creator Bundle",
     "description": "Motion graphics templates and video overlays for high-end production.",
     "price": "$79",
-    "billingCycle": "One-Time",
+    "billingCycle": "Year",
     "feature1": "1500+ video assets",
     "feature2": "Monthly updates",
     "feature3": "Commercial license",
-    "buttonText": "Buy Now"
+    "buttonText": "Buy Now",
+    "image": "https://i.ibb.co.com/LDT59Dv0/Group-5.png"
   }
 ]
