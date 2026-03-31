@@ -1,10 +1,10 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm flex justify-between">
+      <div className="navbar bg-base-100 shadow-sm flex justify-between max-w-300 mx-auto">
           <div >
             <a className="text-[#4F39F6] font-bold text-4xl">DigiTools</a>
           </div>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <div>
             <div className="flex justify-between items-center gap-4">
               <span className="flex justify-between items-center gap-3">
-                <FaShoppingCart />
+                <IoCartOutline />
                 Login
               </span>
               <button className="btn btn-active btn-primary rounded-full">
