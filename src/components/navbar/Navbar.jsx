@@ -19,11 +19,13 @@ const Navbar = () => {
           </div>
           <div>
             <div className="flex justify-between items-center gap-4">
-              <span className=" flex text-xl font-bold justify-between items-center gap-2">
-                <div className="p-1.5 rounded-full border hover:cursor-pointer border-gray-200"><IoCartOutline /></div>
-                <button className="btn rounded-full text-xl font-bold">Login</button>
+              <span className=" flex text-xl font-bold justify-between items-center gap-2 ">
+                <div className="p-1.5 rounded-full border hover:cursor-pointer border-gray-200 transform transition hover:scale-115 duration-200">
+                  <IoCartOutline />
+                </div>
+                <button className="btn rounded-full text-xl font-bold transform transition hover:scale-110 duration-200">Login</button>
               </span>
-              <button className="btn btn-active btn-primary rounded-full">
+              <button className="btn btn-active btn-primary rounded-full transform transition hover:scale-110 duration-200">
                 Get Started
               </button>
             </div>

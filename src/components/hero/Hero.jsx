@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { VscDebugStart } from "react-icons/vsc";
 
 const hero = () => {
@@ -21,7 +22,7 @@ const hero = () => {
               <span>New: AI-Powered Tools Available</span>
             </h4>
             <h1 className="text-7xl font-bold leading-22">
-              Supercharge Your <br /> Digital Workflow
+              Supercharge Your <br /> <span className="text-[#4F39F6]">Digital Workflow</span>
             </h1>
             <p className="py-6 text-[#627382] text-lg leading-8">
               Access premium AI tools, design assets, templates, and
@@ -29,10 +30,13 @@ const hero = () => {
               faster today. <br /> Explore Products
             </p>
             <div className="flex gap-4">
-              <button className="btn btn-primary rounded-full">
+              <button className="btn btn-primary rounded-full transform transition hover:scale-110 duration-200">
                 Explore Products
+                <span>
+                  <FaArrowRight />
+                </span>
               </button>
-              <button className="btn btn-outline btn-primary rounded-full">
+              <button className="btn btn-outline btn-primary rounded-full transform transition hover:scale-110 duration-200">
                 <span>
                   <VscDebugStart />
                 </span>{" "}
