@@ -13,17 +13,32 @@ const hero = () => {
           />
 
           <div className="flex-1">
+            <h4 className="text-[#4F39F6] inline-flex  gap-3 font-medium bg-[#E4D2FF] py-3 rounded-full px-5">
+              <div className="flex w-6 h-6 justify-center items-center rounded-full bg-blue-300">
+                <div className="flex w-4 h-4 justify-center items-center rounded-full bg-blue-500">
+                  <div className="flex w-2 h-2 justify-center items-center rounded-full bg-blue-600"></div>
+                </div>
+              </div>
+              <span>New: AI-Powered Tools Available</span>
+            </h4>
             <h1 className="text-7xl font-bold leading-22">
               Supercharge Your <br /> Digital Workflow
             </h1>
             <p className="py-6 text-[#627382] text-lg leading-8">
               Access premium AI tools, design assets, templates, and
-              productivity <br /> software—all in one place. Start creating faster
-              today. <br /> Explore Products
+              productivity <br /> software—all in one place. Start creating
+              faster today. <br /> Explore Products
             </p>
             <div className="flex gap-4">
-              <button className="btn btn-primary rounded-full">Explore Products</button>
-            <button class="btn btn-outline btn-primary rounded-full"><span><VscDebugStart /></span> Watch Demo</button>
+              <button className="btn btn-primary rounded-full">
+                Explore Products
+              </button>
+              <button class="btn btn-outline btn-primary rounded-full">
+                <span>
+                  <VscDebugStart />
+                </span>{" "}
+                Watch Demo
+              </button>
             </div>
           </div>
         </div>
