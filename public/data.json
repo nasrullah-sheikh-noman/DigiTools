@@ -10,6 +10,7 @@
     "feature2": "Monthly updates",
     "feature3": "Commercial license",
     "buttonText": "Buy Now",
+    "newButtonText": "Add to Cart",
     "image": "https://i.ibb.co.com/xK1Q07Nj/design-tool.png"
   },
   {
@@ -23,6 +24,7 @@
     "feature2": "Weekly updates",
     "feature3": "Personal license",
     "buttonText": "Buy Now",
+    "newButtonText": "Add to Cart",
     "image": "https://i.ibb.co.com/0ptXRj9q/social-media.png"
   },
   {
@@ -36,6 +38,7 @@
     "feature2": "Daily updates",
     "feature3": "Extended license",
     "buttonText": "Buy Now",
+    "newButtonText": "Add to Cart",
     "image": "https://i.ibb.co.com/CKBwGnvd/operation.png"
   },
   {
@@ -49,6 +52,7 @@
     "feature2": "Quarterly updates",
     "feature3": "Commercial license",
     "buttonText": "Buy Now",
+    "newButtonText": "Add to Cart",
     "image": "https://i.ibb.co.com/Kx3yYhw9/writing-2327400-1.png"
   },
   {
@@ -62,6 +66,7 @@
     "feature2": "Monthly updates",
     "feature3": "Commercial license",
     "buttonText": "Buy Now",
+    "newButtonText": "Add to Cart",
     "image": "https://i.ibb.co.com/9mqBXms9/portfolio.png"
   },
   {
@@ -75,6 +80,7 @@
     "feature2": "Monthly updates",
     "feature3": "Commercial license",
     "buttonText": "Buy Now",
+    "newButtonText": "Add to Cart",
     "image": "https://i.ibb.co.com/LDT59Dv0/Group-5.png"
   }
 ]

@@ -10,11 +10,11 @@ const Navbar = () => {
           </div>
           <div>
             <ul className="flex gap-4">
-              <li className="font-semibold " href="/features">Features</li>
-              <li className="font-semibold" href="/products">Products</li>
-              <li className="font-semibold" href="/pricing">Pricing</li>
-              <li className="font-semibold" href="/testimonials">Testimonials</li>
-              <li className="font-semibold" href="faq">FAQ</li>
+              <a className="font-semibold " href="/features">Features</a>
+              <a className="font-semibold" href="/products">Products</a>
+              <a className="font-semibold" href="/pricing">Pricing</a>
+              <a className="font-semibold" href="/testimonials">Testimonials</a>
+              <a className="font-semibold" href="faq">FAQ</a>
             </ul>
           </div>
           <div>
