@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "badge": "Popular",
+    "title": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": "$49",
+    "billingCycle": "One-Time",
+    "feature1": "2000+ templates",
+    "feature2": "Monthly updates",
+    "feature3": "Commercial license",
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 2,
+    "badge": "",
+    "title": "Social Media Starter",
+    "description": "500+ curated templates specifically designed for Instagram and TikTok growth.",
+    "price": "$29",
+    "billingCycle": "One-Time",
+    "feature1": "500+ templates",
+    "feature2": "Weekly updates",
+    "feature3": "Personal license",
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 3,
+    "badge": "Best Value",
+    "title": "Ultimate Marketing Suite",
+    "description": "5000+ professional assets including email headers, ads, and landing pages.",
+    "price": "$99",
+    "billingCycle": "One-Time",
+    "feature1": "5000+ templates",
+    "feature2": "Daily updates",
+    "feature3": "Extended license",
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 4,
+    "badge": "Popular",
+    "title": "Presentation Master",
+    "description": "Premium slide decks for Keynote, PowerPoint, and Google Slides.",
+    "price": "$39",
+    "billingCycle": "One-Time",
+    "feature1": "300+ slide decks",
+    "feature2": "Quarterly updates",
+    "feature3": "Commercial license",
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 5,
+    "badge": "New",
+    "title": "Branding Essentials",
+    "description": "Logo templates, brand guidelines, and stationary mockups for startups.",
+    "price": "$59",
+    "billingCycle": "One-Time",
+    "feature1": "1000+ assets",
+    "feature2": "Monthly updates",
+    "feature3": "Commercial license",
+    "buttonText": "Buy Now"
+  },
+  {
+    "id": 6,
+    "badge": "",
+    "title": "Video Creator Bundle",
+    "description": "Motion graphics templates and video overlays for high-end production.",
+    "price": "$79",
+    "billingCycle": "One-Time",
+    "feature1": "1500+ video assets",
+    "feature2": "Monthly updates",
+    "feature3": "Commercial license",
+    "buttonText": "Buy Now"
+  }
+]

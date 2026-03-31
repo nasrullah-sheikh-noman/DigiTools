@@ -4,10 +4,9 @@ import { VscDebugStart } from "react-icons/vsc";
 const hero = () => {
   return (
     <div>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-screen py-18">
         <div className="hero-content flex-col lg:flex-row-reverse gap-22">
           <img
-            flex-1
             src="https://i.ibb.co.com/m52Xz1n7/banner.png"
             className="max-w-sm rounded-lg shadow-2xl"
           />
@@ -33,7 +32,7 @@ const hero = () => {
               <button className="btn btn-primary rounded-full">
                 Explore Products
               </button>
-              <button class="btn btn-outline btn-primary rounded-full">
+              <button className="btn btn-outline btn-primary rounded-full">
                 <span>
                   <VscDebugStart />
                 </span>{" "}
