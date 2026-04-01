@@ -2,7 +2,7 @@ import React, { use, useState } from "react";
 import { IoMdCheckmark } from "react-icons/io";
 
 const Card = ({ data, cartItem, setCartItem }) => {
-  // const data = info.data;
+
   const [addToCart, setAddToCart] = useState("Buy Now");
 
   return (
@@ -34,7 +34,6 @@ const Card = ({ data, cartItem, setCartItem }) => {
         </div>
         <button
           onClick={() => {
-            console.log("addtocart", addToCart);
             if (addToCart === "Buy Now" ) {
               setCartItem(cartItem + 1);
             }
@@ -43,7 +42,6 @@ const Card = ({ data, cartItem, setCartItem }) => {
             }  
             
             setAddToCart(data.newButtonText);
-            console.log("addtocart", addToCart);
           }}
           className={`btn ${addToCart === "Buy Now" ? "btn-primary" : "btn-success"} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
         >

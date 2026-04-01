@@ -19,14 +19,22 @@ function App() {
 
   return (
     <>
-      <Navbar cartItem={cartItem}/>
+      <Navbar cartItem={cartItem} />
       <Hero />
       <Activity />
-      <ToggoleButton cartItem={cartItem}/>
+      <ToggoleButton cartItem={cartItem} />
       <Suspense
-        fallback={<span className="loading loading-spinner loading-xl"></span>}
+        fallback={
+          <div className="flex justify-center items-center h-62">
+            <span className="loading loading-spinner loading-xl "></span>
+          </div>
+        }
       >
-        <PremiumCards cardPromise={cardPromise} cartItem={cartItem} setCartItem={setCartItem} />
+        <PremiumCards
+          cardPromise={cardPromise}
+          cartItem={cartItem}
+          setCartItem={setCartItem}
+        />
       </Suspense>
     </>
   );
