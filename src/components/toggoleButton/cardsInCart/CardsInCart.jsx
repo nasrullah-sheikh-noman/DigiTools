@@ -1,6 +1,6 @@
 import React from 'react';
 import Carts from '../carts/carts';
-import Empty from '../emptyCart/Empty';
+import Blank from '../blank/Blank';
 
 const CardsInCart = ({cartItem}) => {
   return (
@@ -10,7 +10,7 @@ const CardsInCart = ({cartItem}) => {
           cartItem != 0 ? (
             <Carts cartItem={cartItem}/>
           ) : (
-            <Empty />
+            <Blank />
           )
             
         }

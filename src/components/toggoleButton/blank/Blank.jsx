@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Empty = () => {
+const Blank = () => {
   return (
     <div>
       <div>
@@ -20,4 +20,4 @@ const Empty = () => {
   );
 };
 
-export default Empty;
+export default Blank;
