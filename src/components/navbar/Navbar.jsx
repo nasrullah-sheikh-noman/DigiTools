@@ -35,7 +35,9 @@ const Navbar = ({ cartItem }) => {
                 <div className="p-1.5 rounded-full border hover:cursor-pointer border-gray-200 transform transition hover:scale-115 duration-200">
                   <IoCartOutline />
                 </div>
-                <span className="absolute bottom-6 left-5 text-sm font-semibold">{cartItem}</span>
+                <span className="absolute bottom-6 left-5 text-sm font-semibold ">
+                  {cartItem <= 0 ? "" : cartItem}
+                </span>
               </div>
               <button className="btn rounded-full text-xl font-bold transform transition hover:scale-110 duration-200">
                 Login

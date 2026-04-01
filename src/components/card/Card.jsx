@@ -1,4 +1,5 @@
 import React, { use, useState } from "react";
+import { IoMdCheckmark } from "react-icons/io";
 
 const Card = ({data, cartItem, setCartItem}) => {
 
@@ -43,7 +44,14 @@ const Card = ({data, cartItem, setCartItem}) => {
           }}
           className={`btn ${ addToCart === "Buy Now" ? 'btn-primary' : 'btn-success'} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
         >
-          {addToCart === "Buy Now" ? "Buy Now" : "Added to Cart"}
+          {addToCart === "Buy Now" ? (
+            "Buy Now"
+          ) : (
+            <span className="flex items-center justify-center gap-2 font-bold">
+              <IoMdCheckmark className="font-extrabold text-2xl"/>
+              Added to Cart
+            </span>
+          )}
         </button>
       </div>
     </div>

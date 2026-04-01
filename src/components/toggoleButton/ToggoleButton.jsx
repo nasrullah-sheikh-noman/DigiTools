@@ -14,7 +14,7 @@ const ToggoleButton = ({cartItem}) => {
 
   return (
     <div>
-      <div className='flex gap-4 my-8 max-w-300 mx-auto items-center justify-center border border-gray-200 rounded-full w-fit bg-gray-200'>
+      <div className='flex gap-4 my-8 max-w-300 mx-auto items-center justify-center border border-gray-200 rounded-full w-fit p-1 bg-gray-200'>
 
         <button onClick={productButton} className={`btn rounded-full text-xl font-semibold px-12 py-7 ${selectedButton === "Products" ? "btn-primary" : ""} transform transition hover:scale-110 duration-200 border border-gray-200`}>Products</button>
 
