@@ -37,6 +37,9 @@ const Card = ({data, cartItem, setCartItem}) => {
         <button
           onClick={() => {
             setAddToCart(data.newButtonText);
+            {`addToCart === 'Buy Now' ? ${setCartItem(cartItem+1)} : '' `}
+
+            
           }}
           className={`btn ${ addToCart === "Buy Now" ? 'btn-primary' : 'btn-success'} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
         >

@@ -22,7 +22,7 @@ function App() {
       <Navbar cartItem={cartItem}/>
       <Hero />
       <Activity />
-      <ToggoleButton />
+      <ToggoleButton cartItem={cartItem}/>
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
