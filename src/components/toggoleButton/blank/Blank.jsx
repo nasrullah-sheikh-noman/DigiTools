@@ -12,7 +12,7 @@ const Blank = () => {
             alt=""
           />
           <h2 className="text-gray-500 text-2xl font-bold">
-            Your cart is empty
+            Your cart is empty sdf
           </h2>
         </div>
       </div>
