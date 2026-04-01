@@ -1,5 +1,5 @@
 import React from 'react';
-import Carts from '../carts/carts';
+import Carts from '../carts/Carts';
 import Blank from '../blank/Blank';
 
 const CardsInCart = ({cartItem}) => {
