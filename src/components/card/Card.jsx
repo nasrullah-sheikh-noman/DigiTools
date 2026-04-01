@@ -1,12 +1,9 @@
 import React, { use, useState } from "react";
 import { IoMdCheckmark } from "react-icons/io";
 
-const Card = ({data, cartItem, setCartItem}) => {
-
+const Card = ({ data, cartItem, setCartItem }) => {
   // const data = info.data;
   const [addToCart, setAddToCart] = useState("Buy Now");
-
-
 
   return (
     <div>
@@ -37,18 +34,24 @@ const Card = ({data, cartItem, setCartItem}) => {
         </div>
         <button
           onClick={() => {
-            setAddToCart(data.newButtonText);
-            {`addToCart === 'Buy Now' ? ${setCartItem(cartItem+1)} : '' `}
-
+            console.log("addtocart", addToCart);
+            if (addToCart === "Buy Now" ) {
+              setCartItem(cartItem + 1);
+            }
+            else if (addToCart === "Add to Cart") {
+              setCartItem(cartItem + 0);
+            }  
             
+            setAddToCart(data.newButtonText);
+            console.log("addtocart", addToCart);
           }}
-          className={`btn ${ addToCart === "Buy Now" ? 'btn-primary' : 'btn-success'} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
+          className={`btn ${addToCart === "Buy Now" ? "btn-primary" : "btn-success"} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
         >
           {addToCart === "Buy Now" ? (
             "Buy Now"
           ) : (
             <span className="flex items-center justify-center gap-2 font-bold">
-              <IoMdCheckmark className="font-extrabold text-2xl"/>
+              <IoMdCheckmark className="font-extrabold text-2xl" />
               Added to Cart
             </span>
           )}

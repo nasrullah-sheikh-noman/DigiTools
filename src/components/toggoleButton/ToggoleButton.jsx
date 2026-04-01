@@ -19,7 +19,7 @@ const ToggoleButton = ({cartItem}) => {
         <button onClick={productButton} className={`btn rounded-full text-xl font-semibold px-12 py-7 ${selectedButton === "Products" ? "btn-primary" : ""} transform transition hover:scale-110 duration-200 border border-gray-200`}>Products</button>
 
         <button onClick={cartButton} className={`btn ${selectedButton === "Cart" ? "btn-primary" : ""} rounded-full text-xl font-semibold px-12 py-7 transform transition hover:scale-105 duration-200 border border-gray-200`}>Cart (
-            {cartItem}
+            {cartItem <= 0 ? "0" : cartItem}
           )</button>
 
       </div>
