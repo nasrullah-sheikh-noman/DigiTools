@@ -22,16 +22,8 @@ function App() {
       <Navbar cartItem={cartItem} />
       <Hero />
       <Activity />
-      <ToggoleButton cartItem={cartItem} cardPromise={cardPromise} />
-      {/* <Suspense
-        fallback={
-          <div className="flex justify-center items-center h-62">
-            <span className="loading loading-spinner loading-xl "></span>
-          </div>
-        }
-      >
-        <PremiumCards cartItem={cartItem} setCartItem={setCartItem} />
-      </Suspense> */}
+      <ToggoleButton cartItem={cartItem} setCartItem={setCartItem} cardPromise={cardPromise} />
+      
     </>
   );
 }

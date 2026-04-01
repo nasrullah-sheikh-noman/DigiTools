@@ -5,7 +5,7 @@ import PremiumCard from "../premiumCard/PremiumCard";
 const PremiumCards = ({ cardPromise, cartItem, setCartItem }) => {
   const [cardData, setCartData] = useState([]);
   
-  useEffect( () => {
+  useEffect(() => {
     cardPromise.then(res => setCartData(res));
   }, [cardPromise]);
 

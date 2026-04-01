@@ -2,9 +2,7 @@ import React, { use, useState } from "react";
 import CardsInCart from "./cardsInCart/CardsInCart";
 import PremiumCards from "./premiumCards/PremiumCards";
 
-const ToggoleButton = ({cardPromise, cartItem }) => {
-
-  console.log("cardPromise", cardPromise);
+const ToggoleButton = ({cardPromise, cartItem, setCartItem }) => {
 
   const [selectedButton, setSelectedButton] = useState("Products");
 
@@ -35,9 +33,9 @@ const ToggoleButton = ({cardPromise, cartItem }) => {
       </div>
 
       {selectedButton === "Products" ? (
-        <PremiumCards cardPromise={cardPromise} />
+        <PremiumCards cardPromise={cardPromise} cartItem={cartItem} setCartItem={setCartItem} />
       ) : (
-        <CardsInCart />
+        <CardsInCart cartItem={cartItem}/>
       )}
     </div>
   );
