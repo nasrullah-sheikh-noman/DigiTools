@@ -1,35 +1,51 @@
 import React from "react";
 import { IoCartOutline } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({ cartItem }) => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm flex justify-between max-w-300 mx-auto p-6 rounded-2xl">
-          <div >
-            <a className="text-[#4F39F6] font-bold text-4xl">DigiTools</a>
-          </div>
-          <div>
-            <ul className="flex gap-4">
-              <a className="font-semibold " href="/features">Features</a>
-              <a className="font-semibold" href="/products">Products</a>
-              <a className="font-semibold" href="/pricing">Pricing</a>
-              <a className="font-semibold" href="/testimonials">Testimonials</a>
-              <a className="font-semibold" href="faq">FAQ</a>
-            </ul>
-          </div>
-          <div>
-            <div className="flex justify-between items-center gap-4">
-              <span className=" flex text-xl font-bold justify-between items-center gap-2 ">
+        <div>
+          <a className="text-[#4F39F6] font-bold text-4xl">DigiTools</a>
+        </div>
+        <div>
+          <ul className="flex gap-4">
+            <a className="font-semibold " href="/features">
+              Features
+            </a>
+            <a className="font-semibold" href="/products">
+              Products
+            </a>
+            <a className="font-semibold" href="/pricing">
+              Pricing
+            </a>
+            <a className="font-semibold" href="/testimonials">
+              Testimonials
+            </a>
+            <a className="font-semibold" href="faq">
+              FAQ
+            </a>
+          </ul>
+        </div>
+        <div>
+          <div className="flex justify-between items-center gap-4">
+            <span className=" flex text-xl font-bold justify-between items-center gap-2 ">
+              <div className="flex relative">
+                
                 <div className="p-1.5 rounded-full border hover:cursor-pointer border-gray-200 transform transition hover:scale-115 duration-200">
                   <IoCartOutline />
                 </div>
-                <button className="btn rounded-full text-xl font-bold transform transition hover:scale-110 duration-200">Login</button>
-              </span>
-              <button className="btn btn-active btn-primary rounded-full transform transition hover:scale-110 duration-200">
-                Get Started
+                <span className="absolute bottom-6 left-5 text-sm font-semibold">{cartItem}</span>
+              </div>
+              <button className="btn rounded-full text-xl font-bold transform transition hover:scale-110 duration-200">
+                Login
               </button>
-            </div>
+            </span>
+            <button className="btn btn-active btn-primary rounded-full transform transition hover:scale-110 duration-200">
+              Get Started
+            </button>
           </div>
+        </div>
       </div>
     </div>
   );

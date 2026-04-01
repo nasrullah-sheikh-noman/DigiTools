@@ -4,7 +4,7 @@ import Hero from "./components/hero/Hero";
 import Activity from "./components/activity/Activity";
 import ToggoleButton from "./components/toggoleButton/ToggoleButton";
 import PremiumCards from "./components/premiumCards/PremiumCards";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
@@ -14,16 +14,19 @@ const fetchCards = async () => {
 
 function App() {
   const cardPromise = fetchCards();
+
+  const [cartItem, setCartItem] = useState(0);
+
   return (
     <>
-      <Navbar />
+      <Navbar cartItem={cartItem}/>
       <Hero />
       <Activity />
       <ToggoleButton />
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <PremiumCards cardPromise={cardPromise} />
+        <PremiumCards cardPromise={cardPromise} cartItem={cartItem} setCartItem={setCartItem} />
       </Suspense>
     </>
   );
