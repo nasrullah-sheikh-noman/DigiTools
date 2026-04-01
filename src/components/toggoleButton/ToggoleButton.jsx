@@ -6,8 +6,8 @@ const ToggoleButton = () => {
 
   const productButton = () => {
     setSelectedButton("Products");
-  } 
-
+  };
+  
   const cartButton = () => {
     setSelectedButton("Cart");
   }
