@@ -28,7 +28,7 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartIt
           <>
             {selectedCards.map((card) => (
               <div key={card.id} className="my-6">
-                <Carts data={card} addToCart={addToCart} />
+                <Carts data={card} addToCart={addToCart} setCartItem={setCartItem} setAddToCart={setAddToCart} />
               </div>
             ))}
 
@@ -52,7 +52,7 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartIt
                 )}
                 className="btn btn-primary rounded-full w-full my-6 py-7 text-xl"
               >
-                Proceed to Checkout
+                Clears all cart items
               </button>
             </div>
           </>

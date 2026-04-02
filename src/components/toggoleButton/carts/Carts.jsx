@@ -1,30 +1,37 @@
 import React from "react";
 import { MdDeleteForever } from "react-icons/md";
 
-const Carts = ({addToCart, data}) => {
+const Carts = ({ addToCart, data }) => {
   console.log(addToCart, data);
-  
+
+  // const clearCard = (data) => {
+  //   setAddToCart(addToCart.filter((item) => item != data.id));
+  // };
+
   return (
     <div>
       <div>
-        
         <div className="flex justify-between border border-green-600 rounded-2xl py-6 px-8 items-center">
           <div className="flex justify-between items-center gap-5">
             <div>
-              <img src="https://i.ibb.co.com/9mqBXms9/portfolio.png" alt="" />
+              <span className="w-9 h-9">
+                <img src={data.image} alt="" />
+              </span>
             </div>
             <div className="space-y-2">
               <h3 className="text-xl font-medium">{data.title}</h3>
               <h3 className="font-bold text-lg">{data.price}</h3>
             </div>
           </div>
-          <button className="bg-gray-200 border p-2 rounded-full border-gray-200 hover:scale-110 transition transform duration-150 hover:cursor-pointer">
+          <button
+            // onClick={() => {
+            //   clearCard(data);
+            // }}
+            className="bg-gray-200 border p-2 rounded-full border-gray-200 hover:scale-110 transition transform duration-150 hover:cursor-pointer"
+          >
             <MdDeleteForever />
           </button>
         </div>
-
-        
-
       </div>
     </div>
   );

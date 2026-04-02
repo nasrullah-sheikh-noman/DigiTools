@@ -11,7 +11,7 @@ const Navbar = ({ cartItem }) => {
         <div>
           <ul className="flex gap-4">
             <a className="font-semibold " href="/features">
-              Features
+              Features 
             </a>
             <a className="font-semibold" href="/products">
               Products
