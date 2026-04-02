@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Blank from "../blank/Blank";
 import Carts from "../carts/carts";
 
-const CardsInCart = ({ cardPromise, cartItem, addToCart }) => {
+const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartItem }) => {
   const [cardData, setCartData] = useState([]);
 
   useEffect(() => {
@@ -12,6 +12,11 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart }) => {
   console.log(addToCart, cartItem, cardData);
 
   const selectedCards = cardData.filter((card) => addToCart.includes(card.id));
+
+  const clearAll = () => {
+    setAddToCart([]);
+    setCartItem(0);
+  }
 
   return (
     <div>
@@ -26,9 +31,29 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart }) => {
                 <Carts data={card} addToCart={addToCart} />
               </div>
             ))}
+
             <div className="text-xl font-semibold border-2 border-purple-300 rounded-2xl py-4 flex justify-between px-8">
               <h2>Total Price : </h2>
-              <h2> ${selectedCards.reduce((sum, card) => sum + parseFloat(card.price.toString().replace('$', '')), 0)}</h2>
+              <h2>
+                {" "}
+                $
+                {selectedCards.reduce(
+                  (sum, card) =>
+                    sum + parseFloat(card.price.toString().replace("$", "")),
+                  0,
+                )}
+              </h2>
+            </div>
+
+            <div>
+              <button 
+                onClick={() => (
+                  clearAll()
+                )}
+                className="btn btn-primary rounded-full w-full my-6 py-7 text-xl"
+              >
+                Proceed to Checkout
+              </button>
             </div>
           </>
         ) : (
