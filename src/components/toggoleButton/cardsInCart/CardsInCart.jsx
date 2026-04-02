@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Blank from "../blank/Blank";
-import Carts from "../carts/carts";
+import AddedToCart from "../addedToCart/AddedToCart";
 
 const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartItem }) => {
   const [cardData, setCartData] = useState([]);
@@ -28,7 +28,7 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartIt
           <>
             {selectedCards.map((card) => (
               <div key={card.id} className="my-6">
-                <Carts data={card} addToCart={addToCart} setCartItem={setCartItem} setAddToCart={setAddToCart} />
+                <AddedToCart data={card} addToCart={addToCart} setCartItem={setCartItem} setAddToCart={setAddToCart} />
               </div>
             ))}
 

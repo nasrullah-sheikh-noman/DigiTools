@@ -3,8 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Activity from "./components/activity/Activity";
 import ToggoleButton from "./components/toggoleButton/ToggoleButton";
-import { Suspense, useState } from "react";
-import PremiumCards from "./components/toggoleButton/premiumCards/PremiumCards";
+import { useState } from "react";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
