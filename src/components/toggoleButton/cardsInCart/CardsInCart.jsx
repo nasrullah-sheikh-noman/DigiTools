@@ -28,7 +28,7 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartIt
           <>
             {selectedCards.map((card) => (
               <div key={card.id} className="my-6">
-                <AddedToCart data={card} addToCart={addToCart} setCartItem={setCartItem} setAddToCart={setAddToCart} />
+                <AddedToCart data={card} cartItem={cartItem} addToCart={addToCart} setCartItem={setCartItem} setAddToCart={setAddToCart} />
               </div>
             ))}
 
