@@ -7,6 +7,7 @@ import { useState } from "react";
 import Steps from "./components/steps/Steps";
 import Pricing from "./components/pricing/Pricing";
 import WorkFlow from "./components/workflow/WorkFlow";
+import Footer from "./components/footer/Footer";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
@@ -35,6 +36,7 @@ function App() {
       <Steps/>
       <Pricing/>
       <WorkFlow/>
+      <Footer/>
     </>
   );
 }
