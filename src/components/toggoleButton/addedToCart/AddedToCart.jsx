@@ -1,11 +1,13 @@
 import React from "react";
 import { MdDeleteForever } from "react-icons/md";
 
-const AddedToCart = ({data, setAddToCart , cartItem, setCartItem, addToCart}) => {
-  
+const AddedToCart = ({data, setAddToCart, setCartItem, addToCart}) => {
+  console.log("addtocart", addToCart)
 
   const clearCard = (data) => {
-    setCartItem(cartItem - 1);
+    // console.log("data", data);
+    setAddToCart(addToCart.filter(item => item !== data.id));
+    setCartItem(prev => prev - 1);
   }
 
   return (

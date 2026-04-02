@@ -9,7 +9,7 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartIt
     cardPromise.then((res) => setCartData(res));
   }, [cardPromise]);
 
-  console.log(addToCart, cartItem, cardData);
+  // console.log(addToCart, cartItem, cardData);
 
   const selectedCards = cardData.filter((card) => addToCart.includes(card.id));
 
