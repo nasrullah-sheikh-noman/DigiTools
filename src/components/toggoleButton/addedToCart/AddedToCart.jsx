@@ -5,7 +5,6 @@ const AddedToCart = ({data, setAddToCart, setCartItem, addToCart}) => {
   console.log("addtocart", addToCart)
 
   const clearCard = (data) => {
-    // console.log("data", data);
     setAddToCart(addToCart.filter(item => item !== data.id));
     setCartItem(prev => prev - 1);
   }
