@@ -16,7 +16,7 @@ const Steps = () => {
               <h2 className="text-center items-center justify-center">01</h2>
             </div>
             <div className="inline-block bg-blue-100 rounded-full w-fit p-3">
-              <img src="/src/assets/user.png" alt="user" />
+              <img src="https://i.ibb.co.com/rf3fSjG2/user.png" alt="user" />
             </div>
             <div className="space-y-2.5">
               <h2 className="text-2xl font-bold">Create Account</h2>
@@ -31,7 +31,7 @@ const Steps = () => {
               <h2 className="text-center items-center justify-center">02</h2>
             </div>
             <div className="inline-block bg-blue-100 rounded-full w-fit p-3">
-              <img src="/src/assets/package.png" alt="user" />
+              <img src="https://i.ibb.co.com/bRKT7nxD/package.png" alt="user" />
             </div>
             <div className="space-y-2.5">
               <h2 className="text-2xl font-bold">Choose Products</h2>
@@ -45,7 +45,7 @@ const Steps = () => {
               <h2 className="text-center items-center justify-center">03</h2>
             </div>
             <div className="inline-block bg-blue-100 rounded-full w-fit p-3">
-              <img src="/src/assets/rocket.png" alt="user" />
+              <img src="https://i.ibb.co.com/TxrDyvTF/rocket.png" alt="user" />
             </div>
             <div className="space-y-2.5">
               <h2 className="text-2xl font-bold">Start Creating</h2>
