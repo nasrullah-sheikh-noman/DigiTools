@@ -22,6 +22,9 @@ const Carts = ({addToCart, data}) => {
             <MdDeleteForever />
           </button>
         </div>
+
+        
+
       </div>
     </div>
   );
