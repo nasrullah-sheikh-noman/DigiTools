@@ -40,7 +40,7 @@ const ToggoleButton = ({cardPromise, cartItem , setCartItem, addToCart, setAddTo
           setAddToCart={setAddToCart}
         />
       ) : (
-        <CardsInCart cartItem={cartItem}/>
+        <CardsInCart cardPromise={cardPromise} cartItem={cartItem} addToCart={addToCart}/>
       )}
     </div>
   );

@@ -4,7 +4,6 @@ const Blank = () => {
   return (
     <div>
       <div>
-        <h2 className="text-4xl font-bold">Your Carts</h2>
         <div className="my-12 flex flex-col justify-center items-center text-center space-y-4 ">
           <img
             className="w-40 h-40"
