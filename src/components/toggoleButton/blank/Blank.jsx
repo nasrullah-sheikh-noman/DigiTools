@@ -15,6 +15,7 @@ const Blank = () => {
           </h2>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CardsInCart from "./cardsInCart/CardsInCart";
 import PremiumCards from "./premiumCards/PremiumCards";
+import { toast } from "react-toastify";
 
 const ToggoleButton = ({cardPromise, cartItem , setCartItem, addToCart, setAddToCart }) => {
 
@@ -8,10 +9,12 @@ const ToggoleButton = ({cardPromise, cartItem , setCartItem, addToCart, setAddTo
 
   const productButton = () => {
     setSelectedButton("Products");
+    toast.success("Products button selected!", {position: "bottom-right"});
   };
 
   const cartButton = () => {
     setSelectedButton("Cart");
+    toast.success("Carts button selected!", {position: "bottom-right"});
   };
 
   return (

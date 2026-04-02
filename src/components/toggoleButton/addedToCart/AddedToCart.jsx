@@ -1,10 +1,12 @@
 import React from "react";
 import { MdDeleteForever } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const AddedToCart = ({data, setAddToCart, setCartItem, addToCart}) => {
   console.log("addtocart", addToCart)
 
   const clearCard = (data) => {
+    toast.error(` ${data.title} is deleted from the cart list. `, {position: "bottom-right"});
     setAddToCart(addToCart.filter(item => item !== data.id));
     setCartItem(prev => prev - 1);
   }

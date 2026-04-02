@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Blank from "../blank/Blank";
 import AddedToCart from "../addedToCart/AddedToCart";
+import { toast } from "react-toastify";
 
 const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartItem }) => {
   const [cardData, setCartData] = useState([]);
@@ -14,6 +15,7 @@ const CardsInCart = ({ cardPromise, cartItem, addToCart, setAddToCart, setCartIt
   const selectedCards = cardData.filter((card) => addToCart.includes(card.id));
 
   const clearAll = () => {
+    toast.success("Clears all cart items", {position: "bottom-right"});
     setAddToCart([]);
     setCartItem(0);
   }

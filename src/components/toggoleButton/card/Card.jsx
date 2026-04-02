@@ -1,15 +1,19 @@
 
 import { IoMdCheckmark } from "react-icons/io";
+import { toast } from "react-toastify";
 
 const Card = ({ data, setCartItem, addToCart , setAddToCart }) => {
 
   setCartItem(addToCart.length);
   
-  const handleCart = (id) => {
+  const handleCart = (data) => {
+    const id = data.id;
     if(addToCart.includes(id)) {
       setAddToCart(addToCart.filter(item => item !== id));
+      toast.error(`${data.title} Removed from Cart list.`, {position: "bottom-right"});
     } else {
       setAddToCart([...addToCart, id]);
+      toast.success(`${data.title} added to Cart.`, {position: "bottom-right"});
     }
   }
 
@@ -42,8 +46,8 @@ const Card = ({ data, setCartItem, addToCart , setAddToCart }) => {
         </div>
         <button
           onClick={() => {
-             
-            handleCart(data.id);
+            
+            handleCart(data);
           }}
           className={`btn ${addToCart.includes(data.id) ? "btn-success"  : "btn-primary"} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
         >
