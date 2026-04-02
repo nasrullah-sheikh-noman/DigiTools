@@ -1,9 +1,10 @@
 
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PremiumCard from "../premiumCard/PremiumCard";
 
-const PremiumCards = ({ cardPromise, cartItem, setCartItem }) => {
+const PremiumCards = ({ cardPromise,  setCartItem, addToCart, setAddToCart }) => {
   const [cardData, setCartData] = useState([]);
+  
   
   useEffect(() => {
     cardPromise.then(res => setCartData(res));
@@ -13,8 +14,9 @@ const PremiumCards = ({ cardPromise, cartItem, setCartItem }) => {
     <div>
       <PremiumCard
         cardData={cardData}
-        cartItem={cartItem}
         setCartItem={setCartItem}
+        addToCart={addToCart}
+        setAddToCart={setAddToCart}
       />
     </div>
   );

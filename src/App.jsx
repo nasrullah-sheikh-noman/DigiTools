@@ -15,14 +15,21 @@ const fetchCards = async () => {
 function App() {
   const cardPromise = fetchCards();
 
-  const [cartItem, setCartItem] = useState(0);
+  const [cartItem, setCartItem] = useState([]);
+  const [addToCart, setAddToCart] = useState([]);
 
   return (
     <>
       <Navbar cartItem={cartItem} />
       <Hero />
       <Activity />
-      <ToggoleButton cartItem={cartItem} setCartItem={setCartItem} cardPromise={cardPromise} />
+      <ToggoleButton
+        cartItem={cartItem}
+        setCartItem={setCartItem}
+        cardPromise={cardPromise}
+        addToCart={addToCart}
+        setAddToCart={setAddToCart}
+      />
       
     </>
   );

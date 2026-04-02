@@ -1,9 +1,17 @@
-import React, { use, useState } from "react";
+
 import { IoMdCheckmark } from "react-icons/io";
 
-const Card = ({ data, cartItem, setCartItem }) => {
+const Card = ({ data, setCartItem, addToCart , setAddToCart }) => {
 
-  const [addToCart, setAddToCart] = useState("Buy Now");
+  setCartItem(addToCart.length);
+  
+  const handleCart = (id) => {
+    if(addToCart.includes(id)) {
+      setAddToCart(addToCart.filter(item => item !== id));
+    } else {
+      setAddToCart([...addToCart, id]);
+    }
+  }
 
   return (
     <div>
@@ -34,24 +42,18 @@ const Card = ({ data, cartItem, setCartItem }) => {
         </div>
         <button
           onClick={() => {
-            if (addToCart === "Buy Now" ) {
-              setCartItem(cartItem + 1);
-            }
-            else if (addToCart === "Add to Cart") {
-              setCartItem(cartItem + 0);
-            }  
-            
-            setAddToCart(data.newButtonText);
+             
+            handleCart(data.id);
           }}
-          className={`btn ${addToCart === "Buy Now" ? "btn-primary" : "btn-success"} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
+          className={`btn ${addToCart.includes(data.id) ? "btn-success"  : "btn-primary"} inline-block rounded-full transform transition hover:scale-105 duration-200 font-bold `}
         >
-          {addToCart === "Buy Now" ? (
-            "Buy Now"
-          ) : (
+          {addToCart.includes(data.id) ? (
             <span className="flex items-center justify-center gap-2 font-bold">
               <IoMdCheckmark className="font-extrabold text-2xl" />
               Added to Cart
             </span>
+          ) : (
+            "Buy Now"
           )}
         </button>
       </div>
