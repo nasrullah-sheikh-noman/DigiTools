@@ -5,6 +5,7 @@ import Activity from "./components/activity/Activity";
 import ToggoleButton from "./components/toggoleButton/ToggoleButton";
 import { useState } from "react";
 import Steps from "./components/steps/Steps";
+import Pricing from "./components/pricing/Pricing";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
@@ -31,7 +32,7 @@ function App() {
         setAddToCart={setAddToCart}
       />
       <Steps/>
-      
+      <Pricing/>
     </>
   );
 }

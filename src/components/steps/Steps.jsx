@@ -3,7 +3,7 @@ import React from "react";
 const Steps = () => {
   return (
     <div>
-      <div className="max-w-300 mx-auto justify-center items-center text-center my-29 space-y-3 ">
+      <div className="max-w-300 mx-auto justify-center items-center text-center space-y-3 my-38">
         <div className="space-y-4 mb-16">
           <h2 className="text-4xl font-bold">Get Started in 3 Steps</h2>
           <h4 className="text-gray-500 text-xl">
