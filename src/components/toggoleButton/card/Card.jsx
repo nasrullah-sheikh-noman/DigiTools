@@ -21,7 +21,7 @@ const Card = ({ data, setCartItem, addToCart , setAddToCart }) => {
     <div>
       <div
         key={data.id}
-        className="card p-6 space-y-4 border-2 border-gray-300 rounded-2xl transform transition hover:scale-105 duration-300 hover:border-2 hover:border-pink-400"
+        className="card p-6 space-y-4 border-2 border-gray-300 rounded-2xl transform transition hover:scale-102 lg:hover:scale-105 duration-300 hover:border-2 hover:border-pink-400"
       >
         <div className="flex justify-end  ">
           <h4

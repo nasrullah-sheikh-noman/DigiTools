@@ -8,7 +8,7 @@ const Navbar = ({ cartItem }) => {
         <div>
           <a className="text-[#4F39F6] font-bold text-4xl">DigiTools</a>
         </div>
-        <div className="hidden lg:visible">
+        <div className="hidden lg:flex">
           <ul className="flex gap-4">
             <a className="font-semibold " href="/features">
               Features 

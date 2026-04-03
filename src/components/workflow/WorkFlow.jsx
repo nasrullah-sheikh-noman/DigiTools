@@ -2,8 +2,8 @@ import React from 'react';
 
 const WorkFlow = () => {
   return (
-    <div className='bg-blue-700 p-22 text-white'>
-      <div className='max-w-300 mx-auto p-8'>
+    <div className='bg-blue-700 py-22 text-white'>
+      <div className='max-w-300 mx-auto p-4 md:p-6 lg:p-8'>
         <div className='text-center space-y-6'>
           <h2 className='text-5xl font-bold'>Ready to Transform Your Workflow?</h2>
           <h4 className='text-lg text-gray-300'>Join thousands of professionals who are already using Digitools to work smarter. <br /> Start your free trial today.</h4>
