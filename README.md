@@ -51,6 +51,7 @@ npm run dev
 
 ## 👤 Author
 
-Nasrullah Sheikh Noman
+Nasrullah Sheikh Noman  
+
 GitHub: https://github.com/nasrullah-sheikh-noman
 
