@@ -24,8 +24,8 @@ const Activity = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center itmes-center max-300 mx-auto space-y-4 py-4">
-        <h2 className="text-5xl font-bold mx-auto">Premium Digital Tools</h2>
+      <div className="flex flex-col justify-center itmes-center max-300 mx-auto space-y-4 py-4 px-2 md:px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mx-auto">Premium Digital Tools</h2>
         <h5 className="text-[#627382] text-lg leading-6 flex mx-auto justify-center items-center text-center">
           Choose from our curated collection of premium digital products
           designed <br /> to boost your productivity and creativity.

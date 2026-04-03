@@ -18,7 +18,7 @@ const ToggoleButton = ({cardPromise, cartItem , setCartItem, addToCart, setAddTo
   };
 
   return (
-    <div>
+    <div className="px-2 md:px-2 lg:px-4">
       <div className="flex gap-4 my-8 max-w-300 mx-auto items-center justify-center border border-gray-200 rounded-full w-fit p-1 bg-gray-200">
         <button
           onClick={productButton}

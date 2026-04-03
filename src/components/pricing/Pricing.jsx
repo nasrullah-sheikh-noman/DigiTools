@@ -4,7 +4,7 @@ import { IoCheckmarkSharp } from "react-icons/io5";
 const Pricing = () => {
   return (
     <div className="max-w-300 mx-auto">
-      <div className="mx-8 my-34 space-y-16">
+      <div className="mx-2 sm:mx-4 md:mx-6 lg:mx-8 my-34 space-y-16">
         <div className="space-y-3">
           <h2 className="text-4xl font-bold text-center">
             Simple, Transparent Pricing

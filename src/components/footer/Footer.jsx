@@ -4,8 +4,8 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#101727] text-white pt-24">
-      <div className="max-w-300 mx-auto px-8">
+    <div className="bg-[#101727] text-white pt-10 sm:pt-16 md:pt-20 lg:pt-24">
+      <div className="max-w-300 mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
         <div className=" p-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 justify-center space-y-12 space-x-5">
           <div className="col-span-1 lg:col-span-2 space-y-5 p-2">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">DigiTools</h2>
@@ -52,14 +52,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16 max-w-300 mx-auto">
+        <div className="mt-6 sm:mt-10 md:mt14 lg:mt-16 max-w-300 mx-auto">
           <h2 className="bg-gray-600 h-px "></h2>
         </div>
-        <div className="max-w-300 mx-auto p-10 space-y-8 lg:flex justify-between text-gray-400">
+        <div className="max-w-300 mx-auto p-10 space-y-8 md:flex justify-between text-gray-400">
           <div>
             <h2>© 2026 Digitools. All rights reserved.</h2>
           </div>
-          <div className="flex gap-10 ">
+          <div className="sm:flex gap-10 ">
             <h2>Privacy Policy</h2>
             <h2>Terms of Service</h2>
             <h2>Cookies</h2>

@@ -9,7 +9,7 @@ const hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse gap-22">
           <img
             src="https://i.ibb.co.com/m52Xz1n7/banner.png"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-sm rounded-lg shadow-2xl w-11/12"
           />
 
           <div className="flex-1">
@@ -21,7 +21,7 @@ const hero = () => {
               </div>
               <span>New: AI-Powered Tools Available</span>
             </h4>
-            <h1 className="text-7xl font-bold leading-22">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-10 sm:leading-14 md:leading-18 lg:leading-22 mt-4">
               Supercharge Your <br /> <span className="text-[#4F39F6]">Digital Workflow</span>
             </h1>
             <p className="py-6 text-[#627382] text-lg leading-8">
